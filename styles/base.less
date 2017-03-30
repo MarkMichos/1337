@@ -1,0 +1,235 @@
+@import "syntax-variables";
+
+atom-text-editor, :host {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+}
+
+atom-text-editor .gutter, :host .gutter {
+  background-color: @syntax-gutter-background-color;
+  color: @syntax-gutter-text-color;
+}
+
+atom-text-editor .gutter .line-number.cursor-line, :host .gutter .line-number.cursor-line {
+  background-color: @syntax-gutter-background-color-selected;
+  color: @syntax-gutter-text-color-selected;
+}
+
+atom-text-editor .gutter .line-number.cursor-line-no-selection, :host .gutter .line-number.cursor-line-no-selection {
+  color: @syntax-gutter-text-color-selected;
+}
+
+atom-text-editor .wrap-guide, :host .wrap-guide {
+  color: @syntax-wrap-guide-color;
+}
+
+atom-text-editor .indent-guide, :host .indent-guide {
+  color: @syntax-indent-guide-color;
+}
+
+atom-text-editor .invisible-character, :host .invisible-character {
+  color: @syntax-invisible-character-color;
+}
+
+atom-text-editor .search-results .marker .region, :host .search-results .marker .region {
+  background-color: transparent;
+  border: @syntax-result-marker-color;
+}
+
+atom-text-editor .search-results .marker.current-result .region, :host .search-results .marker.current-result .region {
+  border: @syntax-result-marker-color-selected;
+}
+
+atom-text-editor.is-focused .cursor, :host(.is-focused) .cursor {
+  border-color: @syntax-cursor-color;
+}
+
+atom-text-editor.is-focused .selection .region, :host(.is-focused) .selection .region {
+  background-color: @syntax-selection-color;
+}
+
+atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-editor.is-focused .line.cursor-line, :host(.is-focused) .line-number.cursor-line-no-selection, :host(.is-focused) .line.cursor-line {
+  background-color: rgba(61, 61, 61, 0.33);
+}
+
+.comment {
+  color: #6d6d6d;
+}
+
+.string {
+  color: #fbe3bf;
+}
+
+.constant.numeric {
+  color: #fdb082;
+}
+
+.constant.language {
+  color: #ff8942;
+}
+
+.constant.character, .constant.other {
+  color: #fdb082;
+}
+
+.variable {
+  color: #e9fdac;
+}
+
+.keyword {
+  color: #ff5e5e;
+}
+
+.storage {
+  color: #ff5e5e;
+}
+
+.storage.type {
+  font-style: italic;
+  color: #fbdfb5;
+}
+
+.entity.name.class {
+  text-decoration: underline;
+  color: #8cdaff;
+}
+
+.entity.other.inherited-class {
+  font-style: italic;
+  text-decoration: underline;
+  color: #8cdaff;
+}
+
+.entity.name.function {
+  color: #8cdaff;
+}
+
+.variable.parameter {
+  font-style: italic;
+  color: #fc9354;
+}
+
+.entity.name.tag {
+  color: #ff5e5e;
+}
+
+.entity.other.attribute-name {
+  color: #97d8ea;
+}
+
+.support.function {
+  color: #6699cc;
+}
+
+.support.constant {
+  color: #ecfdb9;
+}
+
+.support.type, .support.class {
+  color: #fbe3bf;
+}
+
+.support.other.variable {
+}
+
+.support.other.namespace, .entity.name.type.namespace {
+  color: #FFB2F9;
+}
+
+.support.other.namespace.use-as.php {
+  color: #66D9EF;
+}
+
+.variable.language.namespace.php {
+  color: #D66990;
+}
+
+.punctuation.separator.inheritance.php {
+  color: #F92672;
+}
+
+.support.function.misc.css, .support.constant.property-value.css, .support.constant.font-name.css {
+  color: #fdb082;
+}
+
+.meta.tag.template.value.twig, .meta.tag.template.block.twig {
+  color: #CD5AC5;
+}
+
+.keyword.control.twig {
+  color: #E05D8C;
+}
+
+.variable.other.twig {
+  color: #E5A5E0;
+}
+
+.variable.other.property.twig {
+  color: #FFE1FC;
+}
+
+.constant.language.twig {
+  color: #FFD2A6;
+}
+
+.constant.numeric.twig {
+  color: #FFD0FB;
+}
+
+.support.function.twig {
+  color: #90E7F7;
+}
+
+.meta.function-call.other.twig {
+  color: #FAB85A;
+}
+
+.meta.function-call.twig {
+  color: #FAB85A;
+}
+
+.invalid {
+  color: #F8F8F0;
+  background-color: #f92649;
+}
+
+.invalid.deprecated {
+  color: #F8F8F0;
+  background-color: #ff9664;
+}
+
+.punctuation.definition.string, .punctuation.definition.variable, .punctuation.definition.string, .punctuation.definition.parameters, .punctuation.definition.string, .punctuation.definition.array {
+  color: #ffffff;
+}
+
+.variable.parameter.function {
+  color: #d0d0d0;
+}
+
+.entity.other.attribute-name.id, .punctuation.definition.entity {
+  color: #66a9ec;
+}
+
+.variable.language.super, .variable.language.this, .variable.language.self {
+  color: #d699ff;
+}
+
+.markup.deleted.git_gutter {
+  color: #D26480;
+}
+
+.markup.inserted.git_gutter {
+  color: #A0B549;
+}
+
+.markup.changed.git_gutter {
+  color: #967EFB;
+}
+
+.markup.ignored.git_gutter {
+  color: #565656;
+}
+
+.markup.untracked.git_gutter {
+  color: #565656;
+}

@@ -1,0 +1,16 @@
+{
+  "name": "1337",
+  "theme": "syntax",
+  "version": "1.0.0",
+  "description": "This is a port of my original 1337 theme for Sublime Text",
+  "keywords": [
+    "syntax",
+    "theme",
+    "1337"
+  ],
+  "repository": "https://github.com/MarkMichos/1337.git",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
