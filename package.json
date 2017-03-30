@@ -1,7 +1,7 @@
 {
   "name": "1337",
   "theme": "syntax",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "This is a port of my original 1337 theme for Sublime Text",
   "keywords": [
     "syntax",
