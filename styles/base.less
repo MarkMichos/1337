@@ -1,235 +1,345 @@
 @import "syntax-variables";
 
-atom-text-editor, :host {
+atom-text-editor {
   background-color: @syntax-background-color;
   color: @syntax-text-color;
 }
 
-atom-text-editor .gutter, :host .gutter {
+atom-text-editor .gutter {
   background-color: @syntax-gutter-background-color;
   color: @syntax-gutter-text-color;
 }
 
-atom-text-editor .gutter .line-number.cursor-line, :host .gutter .line-number.cursor-line {
+atom-text-editor .gutter .line-number.cursor-line {
   background-color: @syntax-gutter-background-color-selected;
   color: @syntax-gutter-text-color-selected;
 }
 
-atom-text-editor .gutter .line-number.cursor-line-no-selection, :host .gutter .line-number.cursor-line-no-selection {
+atom-text-editor .gutter .line-number.cursor-line-no-selection {
   color: @syntax-gutter-text-color-selected;
 }
 
-atom-text-editor .wrap-guide, :host .wrap-guide {
+atom-text-editor .wrap-guide {
   color: @syntax-wrap-guide-color;
 }
 
-atom-text-editor .indent-guide, :host .indent-guide {
+atom-text-editor .indent-guide {
   color: @syntax-indent-guide-color;
 }
 
-atom-text-editor .invisible-character, :host .invisible-character {
+atom-text-editor .invisible-character {
   color: @syntax-invisible-character-color;
 }
 
-atom-text-editor .search-results .marker .region, :host .search-results .marker .region {
+atom-text-editor .search-results .marker .region {
   background-color: transparent;
   border: @syntax-result-marker-color;
 }
 
-atom-text-editor .search-results .marker.current-result .region, :host .search-results .marker.current-result .region {
+atom-text-editor .search-results .marker.current-result .region {
   border: @syntax-result-marker-color-selected;
 }
 
-atom-text-editor.is-focused .cursor, :host(.is-focused) .cursor {
+atom-text-editor.is-focused .cursor {
   border-color: @syntax-cursor-color;
 }
 
-atom-text-editor.is-focused .selection .region, :host(.is-focused) .selection .region {
+atom-text-editor.is-focused .selection .region {
   background-color: @syntax-selection-color;
 }
 
-atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-editor.is-focused .line.cursor-line, :host(.is-focused) .line-number.cursor-line-no-selection, :host(.is-focused) .line.cursor-line {
+atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-editor.is-focused .line.cursor-line {
   background-color: rgba(61, 61, 61, 0.33);
 }
 
-.comment {
+.syntax--comment {
   color: #6d6d6d;
 }
 
-.string {
+.syntax--string {
   color: #fbe3bf;
 }
 
-.constant.numeric {
+.syntax--constant.numeric {
   color: #fdb082;
 }
 
-.constant.language {
+.syntax--constant.language {
   color: #ff8942;
 }
 
-.constant.character, .constant.other {
+.syntax--constant.character, .syntax--constant.other {
   color: #fdb082;
 }
 
-.variable {
+.syntax--variable {
   color: #e9fdac;
 }
 
-.keyword {
+.syntax--keyword {
   color: #ff5e5e;
 }
 
-.storage {
+.syntax--storage {
   color: #ff5e5e;
 }
 
-.storage.type {
+.syntax--storage.type {
   font-style: italic;
   color: #fbdfb5;
 }
 
-.entity.name.class {
+.syntax--entity.name.class {
   text-decoration: underline;
   color: #8cdaff;
 }
 
-.entity.other.inherited-class {
+.syntax--entity.other.inherited-class {
   font-style: italic;
   text-decoration: underline;
   color: #8cdaff;
 }
 
-.entity.name.function {
+.syntax--entity.name.function {
   color: #8cdaff;
 }
 
-.variable.parameter {
+.syntax--variable.parameter {
   font-style: italic;
   color: #fc9354;
 }
 
-.entity.name.tag {
+.syntax--entity.name.tag {
   color: #ff5e5e;
 }
 
-.entity.other.attribute-name {
+.syntax--entity.other.attribute-name {
   color: #97d8ea;
 }
 
-.support.function {
+.syntax--support.function {
   color: #6699cc;
 }
 
-.support.constant {
+.syntax--support.constant {
   color: #ecfdb9;
 }
 
-.support.type, .support.class {
+.syntax--support.type, .support.class {
   color: #fbe3bf;
 }
 
-.support.other.variable {
+.syntax--support.other.variable {
 }
 
-.support.other.namespace, .entity.name.type.namespace {
+.syntax--support.other.namespace, .syntax--entity.name.type.namespace {
   color: #FFB2F9;
 }
 
-.support.other.namespace.use-as.php {
+.syntax--support.other.namespace.use-as.php {
   color: #66D9EF;
 }
 
-.variable.language.namespace.php {
+.syntax--variable.language.namespace.php {
   color: #D66990;
 }
 
-.punctuation.separator.inheritance.php {
+.syntax--punctuation.separator.inheritance.php {
   color: #F92672;
 }
 
-.support.function.misc.css, .support.constant.property-value.css, .support.constant.font-name.css {
+.syntax--support.function.misc.css, .syntax--support.constant.property-value.css, .syntax--support.constant.font-name.css {
   color: #fdb082;
 }
 
-.meta.tag.template.value.twig, .meta.tag.template.block.twig {
+.syntax--meta.tag.template.value.twig, .syntax--meta.tag.template.block.twig {
   color: #CD5AC5;
 }
 
-.keyword.control.twig {
+.syntax--keyword.control.twig {
   color: #E05D8C;
 }
 
-.variable.other.twig {
+.syntax--variable.other.twig {
   color: #E5A5E0;
 }
 
-.variable.other.property.twig {
+.syntax--variable.other.property.twig {
   color: #FFE1FC;
 }
 
-.constant.language.twig {
+.syntax--constant.language.twig {
   color: #FFD2A6;
 }
 
-.constant.numeric.twig {
+.syntax--constant.numeric.twig {
   color: #FFD0FB;
 }
 
-.support.function.twig {
+.syntax--support.function.twig {
   color: #90E7F7;
 }
 
-.meta.function-call.other.twig {
+.syntax--meta.function-call.other.twig {
   color: #FAB85A;
 }
 
-.meta.function-call.twig {
+.syntax--meta.function-call.twig {
   color: #FAB85A;
 }
 
-.invalid {
+.syntax--invalid {
   color: #F8F8F0;
   background-color: #f92649;
 }
 
-.invalid.deprecated {
+.syntax--invalid.deprecated {
   color: #F8F8F0;
   background-color: #ff9664;
 }
 
-.punctuation.definition.string, .punctuation.definition.variable, .punctuation.definition.string, .punctuation.definition.parameters, .punctuation.definition.string, .punctuation.definition.array {
+.syntax--punctuation.definition.string, .syntax--punctuation.definition.variable, .syntax--punctuation.definition.string, .syntax--punctuation.definition.parameters, .syntax--punctuation.definition.string, .syntax--punctuation.definition.array {
   color: #ffffff;
 }
 
-.variable.parameter.function {
+.syntax--variable.parameter.function {
   color: #d0d0d0;
 }
 
-.entity.other.attribute-name.id, .punctuation.definition.entity {
+.syntax--entity.other.attribute-name.id, .syntax--punctuation.definition.entity {
   color: #66a9ec;
 }
 
-.variable.language.super, .variable.language.this, .variable.language.self {
+.syntax--variable.language.super, .syntax--variable.language.this, .syntax--variable.language.self {
   color: #d699ff;
 }
 
-.markup.deleted.git_gutter {
+.syntax--markup.deleted.git_gutter {
   color: #D26480;
 }
 
-.markup.inserted.git_gutter {
+.syntax--markup.inserted.git_gutter {
   color: #A0B549;
 }
 
-.markup.changed.git_gutter {
+.syntax--markup.changed.git_gutter {
   color: #967EFB;
 }
 
-.markup.ignored.git_gutter {
+.syntax--markup.ignored.git_gutter {
   color: #565656;
 }
 
-.markup.untracked.git_gutter {
+.syntax--markup.untracked.git_gutter {
   color: #565656;
+}
+
+//
+.syntax--entity.other.attribute-name.ng {
+  color: #6699cc;
+}
+
+.syntax--punctuation.separator.key-value.ng {
+  color: #ffffff;
+}
+
+.syntax--meta.attribute-with-value.ng {
+  color: #8cdaff;
+}
+
+.syntax--punctuation.definition.string.begin.ng {
+  color: #8cdaff;
+}
+
+.syntax--punctuation.definition.string.end.ng {
+  color: #8cdaff;
+}
+
+.syntax--meta.toc-list.ng {
+  color: #8cdaff;
+}
+
+.syntax--string.interpolation.html {
+  color: #8cdaff;
+}
+
+.syntax--punctuation.definition.interpolation.begin.ng {
+  color: #FFD2A6;
+}
+
+.syntax--punctuation.definition.interpolation.end.ng {
+  color: #FFD2A6;
+}
+
+.syntax--meta.definition.interpolation.ng {
+  color: #8cdaff;
+}
+
+.syntax--string.interpolation.pipe.ng {
+  color: #FAB85A;
+}
+
+.syntax--meta.ngfor-attribute.ng {
+  color: #FFD2A6;
+}
+
+.syntax--punctuation.definition.tag.ng {
+  color: #ecfdb9;
+}
+
+.syntax--punctuation.definition.tag.begin.ng {
+  color: #ecfdb9;
+}
+
+.syntax--punctuation.definition.tag.end.ng {
+  color: #ecfdb9;
+}
+
+.syntax--entity.name.tag.ng {
+  color: #ecfdb9;
+}
+
+.syntax--entity.name.tag.other.ng {
+  color: #ecfdb9;
+}
+
+.syntax--meta.tag.any.ng {
+  color: #ecfdb9;
+}
+
+.syntax--meta.tag.other.ng {
+  color: #ecfdb9;
+}
+
+// Interpolation Syntax
+.syntax--punctuation.definition.js.string.begin.ng.html {
+  color: #d0d0d0;
+}
+
+.syntax--punctuation.definition.js.string.end.ng.html {
+  color: #d0d0d0;
+}
+
+.syntax--string.operator.ng {
+  color: @syntax-text-color !important;
+}
+
+.syntax--string.bracket.ng {
+  color: @syntax-text-color !important;
+}
+
+.syntax--string.js.bool.ng {
+  color: #6d6d6d;
+}
+
+.syntax--punctuation.definition.function.begin.ng {
+  color: #d0d0d0;
+}
+
+.syntax--punctuation.definition.function.end.ng {
+  color: #d0d0d0;
+}
+
+.syntax--meta.definition.function.ng {
+  color: #d0d0d0;
 }
